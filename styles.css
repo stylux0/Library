@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header{
+    height: 10vh;
+    align-self: center;
+}
+
+main{
+    height:80vh;
+}
+
+#library-flex{
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    
+
+}
+
+.card-book{
+    height: 250px;
+    width: 175px;
+    border-radius: 0px 20px 20px 0px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 6fr 3fr 3fr 3fr;
+    box-shadow: 9px 8px 10px rgb(223, 216, 175);
+}
+
+.card-book h3{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    height: 100%;
+    padding: 10% 10px 10px 10px;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+
+.card-book .author{
+    grid-column: 1/3;
+    grid-row: 3/4;
+    align-self: center;
+    justify-self: center;
+}
+
+.card-book .pages{
+    grid-row: 4/5;
+    grid-column: 1/3;
+    align-self: center;
+    justify-self: center;
+}
+
+.card-book .read{
+    grid-row: 5/6;
+    grid-column: 1/3;
+    align-self: center;
+    justify-self: center;
+}
+
+.mdi-alpha-x-box{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 90%;
+    height: 70%;
+    font-size: 30px;
+    align-self: center;
+    justify-self: center;
+    color: rgb(194, 0, 0);
+}
+
+.mdi-alpha-x-box:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.mdi-alpha-x-box:active{
+    color: rgb(255, 131, 131);
+    
+}
+
+
+footer{
+    height: 10vh;
+    align-self: center;
+}
