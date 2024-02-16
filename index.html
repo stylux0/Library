@@ -4,30 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="shortcut icon" href="./img/book-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
     <title>Library</title>
 </head>
 <body>
     <header>
-        <h1>Library</h1>
+        <h1>LIBRARY PROJECT</h1>
+        
     </header>
+    <dialog class="dialog">
+        <form method="dialog">
+            <div class="container-input">
+                <label for="title-form">Title</label>
+                <input type="text" name="title-form" id="title-form">
+            </div>
+
+            <div class="container-input">
+                <label for="author-form">Author</label>
+                <input type="text" name="author-form" id="author-form">
+            </div>
+
+            <div class="container-input">
+                <label for="pages-form">Pages</label>
+                <input type="number" name="pages-form" id="pages-form">
+            </div>
+
+            <div class="read-dialog ocontainer-input" >
+                <label for="read-form">Do I read it?</label>
+                <input type="checkbox" name="read-form" id="read-form" value="true">
+            </div> 
+        </form>
+        <div>
+            <button id="cancel">Cancel</button>
+            <button id="confirm">Confirm</button>
+          
+        </div>
+    </dialog>
     <main>
+        
         <div class="library-container">
             <div id="library-flex">
-                <div class="card-book">
-                    <h3>Guardianes de la Galaxia</h3>
-                    <span class="author">by Jhonny Deep</span>
-                    <span class="pages">150 pages</span>
-                    <div class="read">
-                        <label for="read">Do I read it?</label>
-                        <input type="checkbox" name="read" id="read">
+                <div class="button-add-container">
+                    <div class="button-container card-book book">
+                        <button id="add-book"> New Book <br><span class="mdi mdi-plus-circle"></span></button>
+                        
                     </div>
-                    
-                    <span id="delete" class="mdi mdi-alpha-x-box"></span>
                 </div>
+                 <!-- <div class="card-book">
+                        <div class="book">
+                            <h3>Guardianes de la Galaxia</h3>
+                            <span class="author">by Jhonny Deep</span>
+                            <span class="pages">150 pages</span>
+                            <div class="read">
+                                <label for="read">Do I read it?</label>
+                                <input type="checkbox" name="read" id="read">
+                            </div> 
+                            <span id="delete" class="mdi mdi-alpha-x-box"></span>
+                        <div>
+                </div>-->
+               
             </div>
+          
         </div>
     </main>
     <footer>
